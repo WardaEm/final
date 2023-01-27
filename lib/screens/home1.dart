@@ -1,6 +1,8 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+
+import 'barcode.dart';
 class Home1 extends StatefulWidget {
   const Home1({Key? key}) : super(key: key);
 
@@ -75,6 +77,7 @@ class _Home1State extends State<Home1> {
                             borderSide:BorderSide(color: Color(0xff00101D)),
                             borderRadius:BorderRadius.circular(12)))),
 
+
                   ),
                 SizedBox(height: 20,),
                 Padding(
@@ -97,7 +100,7 @@ height: 62,
 TextButton(autofocus:false,style: ButtonStyle(
 
 ),onPressed: (){
-  print('dfghjik');
+
 }, child: Text('Tap here to add your camera',
   style: TextStyle(
 fontSize: 20,fontWeight: FontWeight.w500,fontFamily: "Poppins",
@@ -116,7 +119,7 @@ fontSize: 20,fontWeight: FontWeight.w500,fontFamily: "Poppins",
                           focusColor: Color(0xffff8fcfd),elevation: 0,
                           backgroundColor: Color(0xfff8fcfd),onPressed: (){
                           setState(() {
-print('jm bv x');
+Navigator.push(context, MaterialPageRoute(builder: (context)=>BarCode()));
                           });
                         },child: Image.asset("assets/plus.png",width: 18,
                           height: 18,),mini: true,),

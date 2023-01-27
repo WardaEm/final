@@ -247,7 +247,9 @@ fontSize: 24,fontWeight: FontWeight.w500
             )),
                 SizedBox(height: 20,),
                 InkWell(
-                    onTap: (){},
+                    onTap: (){
+                      Navigator.pop(context);
+                    },
                     child: Container(
 
                         padding: EdgeInsetsDirectional.all(20),

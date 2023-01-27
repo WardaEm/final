@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fproject/alerts.dart';
-import 'package:fproject/cameras.dart';
-import 'package:fproject/home1.dart';
-import 'package:fproject/profile.dart';
+import 'package:fproject/pages/alerts.dart';
+import 'package:fproject/pages/cameras.dart';
+import 'package:fproject/screens/home1.dart';
+import 'package:fproject/pages/profile.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
