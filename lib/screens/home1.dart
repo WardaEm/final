@@ -25,7 +25,7 @@ class _Home1State extends State<Home1> {
     return Scaffold(
         appBar: AppBar(backgroundColor: Color(0xfff8fcfd),elevation: 0,),
         body: SingleChildScrollView(
-          physics: ScrollPhysics(),
+          physics: BouncingScrollPhysics(),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
                crossAxisAlignment: CrossAxisAlignment.start,

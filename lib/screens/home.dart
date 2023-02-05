@@ -31,9 +31,9 @@ body: pages.elementAt(currentIndex),
    selectedFontSize: 12,
         unselectedFontSize: 12,
         items:[
- BottomNavigationBarItem(icon:Image.asset('assets/7.png',color: Color(0xff00101D),
+ BottomNavigationBarItem(icon:Image.asset('assets/7.png',
    width: 30,height: 23,),label: "Home",),
-          BottomNavigationBarItem( label: "cameras",icon:Image.asset('assets/6.png',color: Color(0xff7D7E7F),width: 28,height: 18,)),
+          BottomNavigationBarItem( label: "cameras",icon:Image.asset('assets/6.png',width: 28,height: 18,)),
           BottomNavigationBarItem(
     icon:Image.asset('assets/8.png',width:25 ,height: 28,
     ),label: "Alerts"),
@@ -43,6 +43,11 @@ body: pages.elementAt(currentIndex),
   showUnselectedLabels: true,
   selectedItemColor: Color(0xff00101D),
   unselectedItemColor: Color(0xff7D7E7F),
+  selectedIconTheme: IconThemeData(
+    color: Color(0xff00101D),
+
+  ),
+
   selectedLabelStyle: TextStyle(color: Color(0xff7D7E7F)),
   unselectedLabelStyle: TextStyle(color: Color(0xff7D7E7F)),
   onTap: _changeItem

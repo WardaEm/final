@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:fproject/grid.dart';
+import 'package:fproject/screens/home.dart';
 import 'package:fproject/screens/option.dart';
 
 
@@ -34,7 +37,7 @@ class _LoginState extends State<Login> {
 
         InkWell(
            onTap: (){
-             Navigator.push(context, MaterialPageRoute(builder: (context)=>OptionsScreen()));
+             Navigator.push(context, MaterialPageRoute(builder: (context)=>Grid()));
            },
            child: Container(
 
@@ -69,7 +72,18 @@ width: 300,
 
             SizedBox(height: 18,),
               InkWell(
-                onTap: (){},
+                onTap: (){
+                  // Fluttertoast.showToast(
+                  //     msg: "تم تسجيل الدخول بنجاح",
+                  //     toastLength: Toast.LENGTH_SHORT,
+                  //     gravity: ToastGravity.BOTTOM,
+                  //     timeInSecForIosWeb: 3,
+                  //     backgroundColor: Colors.red,
+                  //     textColor: Colors.white,
+                  //     fontSize: 18.0
+                  // );
+                  // Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+                },
                 child: Center(
                   child: Container(
 

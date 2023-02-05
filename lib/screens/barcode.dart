@@ -41,7 +41,7 @@ class _BarCodeState extends State<BarCode> {
         ),
       ),
       body: SingleChildScrollView(
-        physics: ScrollPhysics(),
+        physics: BouncingScrollPhysics(),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
