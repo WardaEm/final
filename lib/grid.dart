@@ -210,7 +210,7 @@ class _GridState extends State<Grid> {
                  textAlign:   TextAlign.center,
                     cont.text,
 
-                    style: TextStyle(fontSize: 24),
+                    style: TextStyle(fontSize: 17),
                   )
                 ],
               ),
