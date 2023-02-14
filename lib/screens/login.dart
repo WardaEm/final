@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:fproject/grid.dart';
 import 'package:fproject/screens/home.dart';
-import 'package:fproject/screens/option.dart';
 
 
 class Login extends StatefulWidget {

@@ -63,6 +63,9 @@ class _Home1State extends State<Home1> {
 
                     child: TextFormField(textAlign: TextAlign.center,
                         // controller:controller ,
+onFieldSubmitted: (data){
+
+},
 
                         validator:(value)=>value!.isEmpty?"This field is reuired":null
                       ,decoration: InputDecoration(hintText: "Enter Place",hintStyle:
@@ -81,91 +84,91 @@ class _Home1State extends State<Home1> {
                   ),
                 SizedBox(height: 20,),
 
-                Container(
-                  width: 660,
-                  padding: EdgeInsets.only(
-                    left: 15,
-                    top: 10,
-                    right: 50,
-                  ),
-                  child: TextFormField(
-                    // controller: controller,
-                      validator: (value) =>
-                      value!.isEmpty ? "This field is reuired" : null,
-                      decoration: InputDecoration(
-                          suffixIcon: IconButton(
-                            onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>BarCode()));
-                            },
-                            icon: Icon(Icons.add_circle_rounded,),
-                          ),
-                          hintText: "Tap here to add your camera",
-                          hintStyle: TextStyle(
-                            fontSize: 20,
-                            color: Color(0xff00101D),
-                          ),
-                          // fillColor: Colors.white,
-                          // focusColor: Colors.white54,
-                          // hoverColor: Colors.white,
-                          focusedBorder: OutlineInputBorder(),
+                // Container(
+                //   width: 660,
+                //   padding: EdgeInsets.only(
+                //     left: 15,
+                //     top: 10,
+                //     right: 50,
+                //   ),
+                //   child: TextFormField(
+                //     // controller: controller,
+                //       validator: (value) =>
+                //       value!.isEmpty ? "This field is reuired" : null,
+                //       decoration: InputDecoration(
+                //           suffixIcon: IconButton(
+                //             onPressed: () {
+                //               Navigator.push(context, MaterialPageRoute(builder: (context)=>BarCode()));
+                //             },
+                //             icon: Icon(Icons.add_circle_rounded,),
+                //           ),
+                //           hintText: "Tap here to add your camera",
+                //           hintStyle: TextStyle(
+                //             fontSize: 20,
+                //             color: Color(0xff00101D),
+                //           ),
+                //           // fillColor: Colors.white,
+                //           // focusColor: Colors.white54,
+                //           // hoverColor: Colors.white,
+                //           focusedBorder: OutlineInputBorder(),
+                //
+                //           disabledBorder: OutlineInputBorder(
+                //               borderSide: BorderSide(color: Colors.white)),
+                //           enabledBorder: OutlineInputBorder(
+                //               borderSide: BorderSide(color: Color(0xff00101D)),
+                //               borderRadius: BorderRadius.circular(12)))),
+                // ),
 
-                          disabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.white)),
-                          enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color(0xff00101D)),
-                              borderRadius: BorderRadius.circular(12)))),
-                ),
 
+                Padding(
+                  padding: const EdgeInsets.only(left: 15,right:55 ),
+                  child: Container(
+                    width: 366,
+height: 62,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(
+                        color: Colors.black,
+                        style: BorderStyle.solid
+                      )
+                    ),
+                    child: Row(
 
-//                 Padding(
-//                   padding: const EdgeInsets.only(left: 15,right:55 ),
-//                   child: Container(
-//                     width: 366,
-// height: 62,
-//                     decoration: BoxDecoration(
-//                       borderRadius: BorderRadius.circular(10),
-//                       border: Border.all(
-//                         color: Colors.black,
-//                         style: BorderStyle.solid
-//                       )
-//                     ),
-//                     child: Row(
-//
-//                        mainAxisAlignment: MainAxisAlignment.center,
-//                        crossAxisAlignment: CrossAxisAlignment.center,
-//                       children: [
-//                         // TextField(),
-// TextButton(autofocus:false,style: ButtonStyle(
-//
-// ),onPressed: (){
-//
-// }, child: Text('Tap here to add your camera',
-//   style: TextStyle(
-// fontSize: 20,fontWeight: FontWeight.w500,fontFamily: "Poppins",
+                       mainAxisAlignment: MainAxisAlignment.center,
+                       crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        // TextField(),
+TextButton(autofocus:false,style: ButtonStyle(
+
+),onPressed: (){
+
+}, child: Text('Tap here to add your camera',
+  style: TextStyle(
+fontSize: 20,fontWeight: FontWeight.w500,fontFamily: "Poppins",
+                          color: Color(0xff00101D)
+                        ),)),
+//                         Text("Tap here to add your camera",style: TextStyle(
+// fontSize: 20.1,fontWeight: FontWeight.w500,fontFamily: "Poppins",
 //                           color: Color(0xff00101D)
-//                         ),)),
-// //                         Text("Tap here to add your camera",style: TextStyle(
-// // fontSize: 20.1,fontWeight: FontWeight.w500,fontFamily: "Poppins",
-// //                           color: Color(0xff00101D)
-// //                         ),
-// //                         ),
-//
-//
-//                         FloatingActionButton(hoverColor: Color(0xffff8fcfd),splashColor:  Color(0xffff8fcfd),
-//                           highlightElevation: 0,focusElevation: 0,hoverElevation: 0,
-//                           disabledElevation: 0,
-//                           focusColor: Color(0xffff8fcfd),elevation: 0,
-//                           backgroundColor: Color(0xfff8fcfd),onPressed: (){
-//                           setState(() {
-// Navigator.push(context, MaterialPageRoute(builder: (context)=>BarCode()));
-//                           });
-//                         },child: Image.asset("assets/plus.png",width: 18,
-//                           height: 18,),mini: true,),
-//
-//                       ],
-//                     ),
-//                   ),
-//                 )
+//                         ),
+//                         ),
+
+
+                        FloatingActionButton(hoverColor: Color(0xffff8fcfd),splashColor:  Color(0xffff8fcfd),
+                          highlightElevation: 0,focusElevation: 0,hoverElevation: 0,
+                          disabledElevation: 0,
+                          focusColor: Color(0xffff8fcfd),elevation: 0,
+                          backgroundColor: Color(0xfff8fcfd),onPressed: (){
+                          setState(() {
+Navigator.push(context, MaterialPageRoute(builder: (context)=>BarCode()));
+                          });
+                        },child: Image.asset("assets/plus.png",width: 18,
+                          height: 18,),mini: true,),
+
+                      ],
+                    ),
+                  ),
+                )
                 // ),
 
 
